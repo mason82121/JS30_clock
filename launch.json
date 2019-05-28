@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "node",
+    "request": "launch",
+    "name": "啟動程式",
+    "program": "${workspaceRoot}/src/index.js", //需要編譯的檔案
+    "stopOnEntry": false,
+    "args": [],
+    "cwd": "${workspaceRoot}",
+    //此處的"babelWatch"要和上一步的tasks中的taskName一樣
+    "preLaunchTask": "babelWatch",
+    "runtimeExecutable": null,
+    "runtimeArgs": ["--nolazy"],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "sourceMaps": true,
+    "outFiles": [
+      "${workspaceRoot}/dist" //輸出檔案的目錄
+    ]
+  }]
+}

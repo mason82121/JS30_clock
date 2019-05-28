@@ -1,0 +1,17 @@
+{
+  "name": "jq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babelBuild": "babel src -d dist/src -s inline",
+    "babelWatch": "babel *.js -d dist -w -s inline"
+  },
+  "author": "",
+  "license": "ISC"
+}

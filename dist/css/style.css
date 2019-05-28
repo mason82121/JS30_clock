@@ -1,0 +1,196 @@
+.hand-sec:after, .hand-sec:before {
+  border: solid transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 202.5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../../bg.jpg) center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clock {
+  background: #eee;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 10px 25px 15px 5px rgba(255, 255, 255, 0.5), inset -10px -25px 15px -10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(0, 0, 0, 0.25), 0 0 0 10px #ccc;
+          box-shadow: inset 10px 25px 15px 5px rgba(255, 255, 255, 0.5), inset -10px -25px 15px -10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(0, 0, 0, 0.25), 0 0 0 10px #ccc;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 450px;
+  position: relative;
+  width: 450px;
+}
+
+.clock:after {
+  background: #ccc radial-gradient(#fff 0%, #eee 25%, #ccc 100%);
+  border-radius: 50%;
+  bottom: 0;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.75), 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.75), 2px 2px 5px rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  height: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+.hand-hour, .hand-min, .hand-sec {
+  border: solid transparent;
+  bottom: 50%;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.hand-hour {
+  border-bottom-color: #080;
+  border-width: 0 6px 135px;
+  height: 0;
+  width: 0;
+}
+
+.hand-min {
+  border-bottom-color: #333;
+  border-width: 0 4px 180px;
+  height: 0;
+  width: 0;
+}
+
+.hand-sec {
+  border-bottom-color: #f00;
+  border-width: 0 2px 202.5px;
+  height: 0;
+  width: 0;
+}
+
+.hand-sec:after {
+  border-left-color: #f00;
+  border-width: 15px 0 30px 10px;
+  left: 50%;
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.hand-sec:before {
+  border-right-color: #f00;
+  border-width: 15px 10px 30px 0;
+  right: 50%;
+  -webkit-transform: rotate(-21deg);
+          transform: rotate(-21deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.time-pin {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.time-pin:after {
+  background: #ccc;
+  content: "";
+  display: block;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3px;
+}
+
+.time-pin:nth-child(1) {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.time-pin:nth-child(2) {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.time-pin:nth-child(3) {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.time-pin:nth-child(4) {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.time-pin:nth-child(5) {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.time-pin:nth-child(6) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.time-pin:nth-child(7) {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+
+.time-pin:nth-child(8) {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.time-pin:nth-child(9) {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.time-pin:nth-child(10) {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+
+.time-pin:nth-child(11) {
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.time-pin:nth-child(12) {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*# sourceMappingURL=style.css.map */
